@@ -24,7 +24,7 @@ namespace Lab_01_ch1
         {
             Console.WriteLine("Enter the name of group");
             string usrname = Console.ReadLine();
-            DateTime dateTime = new DateTime();
+            DateTime dateTime = DateTime.Now;
             Console.WriteLine(usrname + " " + dateTime);
         }
         static void Task2()
