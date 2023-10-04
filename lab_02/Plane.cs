@@ -88,7 +88,7 @@ namespace lab_02
             }
             //Додавання рядка сум
             table.AddRow("","Всього:",sum[0], sum[1], sum[2], sum[3]);
-            //Форматування таблиці  
+            //Форматування таблиці
             table.Write(Format.Alternative);
         }
 
