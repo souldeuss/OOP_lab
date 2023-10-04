@@ -11,9 +11,9 @@ namespace Lab_01_ch1
         static void Main(string[] args)
         {
 
-            Task1();
+            //Task1();
 
-            Task2();
+            //Task2();
 
             Task3();
 
