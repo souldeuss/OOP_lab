@@ -9,7 +9,7 @@ namespace lab_04
         {
             Console.WriteLine("Enter coordinate \"X\": ");
 
-            point.x = Convert.ToInt32(Console.ReadLine()); 
+            point.x = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Enter coordinate \"Y\": ");
             point.y = Convert.ToInt32(Console.ReadLine());
