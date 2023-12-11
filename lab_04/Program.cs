@@ -1,79 +1,35 @@
 ﻿using System;
 
-
 namespace lab_04
 {
     internal class Program
     {
-        static void Main()
-        {
-            Console.WriteLine("Enter coordinate \"X\": ");
-
-            point.x = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Enter coordinate \"Y\": ");
-            point.y = Convert.ToInt32(Console.ReadLine());
-
-            Console.Write("Choose operation: \n |operation ==| operation != | operation < | operation > | operation << | \n");
-
-            string operation = Console.ReadLine();
-
-            switch (operation)
+            static void Main()
             {
-                case "==":
-                    if (point.x == point.y)
-                    {
-                        Console.WriteLine(true);
-                    }
-                    else
-                    {
-                        Console.WriteLine(false);
-                    }
-                    break;
-                case "!=":
-                    if (point.x != point.y)
-                    {
-                        Console.WriteLine(true);
-                    }
-                    else
-                    {
-                        Console.WriteLine(false);
-                    }
-                    break;
-                case "<":
-                    if (point.x < point.y)
-                    {
-                        Console.WriteLine(true);
-                    }
-                    else
-                    {
-                        Console.WriteLine(false);
-                    }
-                    break;
-                case ">":
-                    if (point.x > point.y)
-                    {
-                        Console.WriteLine(true);
-                    }
-                    else
-                    {
-                        Console.WriteLine(false);
-                    }
-                    break;
-                case "<<":
-                    Console.WriteLine($"Point: ({point.x};{point.y})");
-                    break;
+                ConsoleKeyInfo cki;
+
+                Console.Write("Choose operation: \n | == | != | < | > | << | \n ");
+
+                string operation = Console.ReadLine();
 
 
-                default:
-                    Console.WriteLine("Incorrect data, pls try again!");
-                    Main();
-                    break;
-                    
+
+                Console.WriteLine("Enter coordinate \"X\": ");
+                int X1 = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Enter coordinate \"Y\": ");
+                int Y1 = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Enter coordinate \"X\": ");
+                int X2 = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Enter coordinate \"Y\": ");
+                int Y2 = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine(Point.Result(X1,Y1,X2,Y2,operation));
+
+                Console.ReadKey();
             }
-            Console.ReadLine();
-        }
-
 
     }
 }
