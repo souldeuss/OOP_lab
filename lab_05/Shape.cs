@@ -8,7 +8,6 @@ namespace lab_05
 {
     internal interface Shape
     {
-
         void CalculateArea(int a, int b,object shape);
     }
 }
