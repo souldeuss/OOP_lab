@@ -11,13 +11,6 @@ namespace lab_04
 
                 string operation = Console.ReadLine();
 
-<<<<<<< HEAD
-=======
-
-
-               
-
->>>>>>> 240f7b571985d661f2c0d53419300d2fdc54e495
                 Console.WriteLine(Point.Result(operation));
 
                 Console.ReadKey();
