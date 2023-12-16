@@ -14,19 +14,9 @@ namespace lab_04
 
 
 
-                Console.WriteLine("Enter coordinate \"X\": ");
-                int X1 = Convert.ToInt32(Console.ReadLine());
+               
 
-                Console.WriteLine("Enter coordinate \"Y\": ");
-                int Y1 = Convert.ToInt32(Console.ReadLine());
-
-                Console.WriteLine("Enter coordinate \"X\": ");
-                int X2 = Convert.ToInt32(Console.ReadLine());
-
-                Console.WriteLine("Enter coordinate \"Y\": ");
-                int Y2 = Convert.ToInt32(Console.ReadLine());
-
-                Console.WriteLine(Point.Result(X1,Y1,X2,Y2,operation));
+                Console.WriteLine(Point.Result(operation));
 
                 Console.ReadKey();
             }
