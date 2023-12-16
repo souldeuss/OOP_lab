@@ -4,28 +4,37 @@ namespace lab_04
 {
     class Point
     {
-        public int x { get; set; }
-        public int y { get; set; }
-        //public static int x2;
-        //public static int y2;
+        public int X { get; set; }
+        public int Y { get; set; }
 
         public Point(int x,int y)
         {
-            int X = x;
-            int Y = y;
+             X = x;
+             Y = y;
         }
 
-        public static string Result (int X1,int Y1,int X2,int Y2, string operation)
+        public static string Result (string operation)
         {
             string R = "False";
 
-            var P1 = new Point(X1,Y2);
+
+            Console.WriteLine("Enter coordinate \"X\": ");
+            int X1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter coordinate \"Y\": ");
+            int Y1 = Convert.ToInt32(Console.ReadLine());
+            var P1 = new Point(X1,Y1);
+
+            Console.WriteLine("Enter coordinate \"X\": ");
+            int X2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter coordinate \"Y\": ");
+            int Y2 = Convert.ToInt32(Console.ReadLine());
             var P2 = new Point(X2,Y2);
+
 
             switch (operation)
             {
                 case "==":
-                    if (P1.x == P2.x || P1.y == P2.y)
+                    if (P1.X == P2.X || P1.Y == P2.Y)
                     {
                         R = ("True");
                     }
@@ -35,7 +44,7 @@ namespace lab_04
                     }
                     break;
                 case "!=":
-                    if (P1.x != P2.x || P1.y != P2.y)
+                    if (P1.X != P2.X || P1.Y != P2.Y)
                     {
                         R = ("True");
                     }
@@ -45,7 +54,7 @@ namespace lab_04
                     }
                     break;
                 case "<":
-                    if (P1.x < P2.x && P1.y < P2.y)
+                    if (P1.X < P2.X || P1.Y < P2.Y)
                     {
                         R = ("True");
                     }
@@ -55,7 +64,7 @@ namespace lab_04
                     }
                     break;
                 case ">":
-                    if (P1.x > P2.x && P1.y > P2.y)
+                    if (P1.X > P2.X || P1.Y > P2.Y)
                     {
                         R = ("True");
                     }
@@ -65,7 +74,7 @@ namespace lab_04
                     }
                     break;
                 case "<<":
-                    Console.WriteLine($"Point 1: ({P1.x};{P1.y})\n Point 2: ({P2.x};{P2.y})");
+                    Console.WriteLine($"Point 1: ({P1.X};{P1.Y})\n Point 2: ({P2.X};{P2.Y})");
                     break;
 
 
