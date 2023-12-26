@@ -9,11 +9,17 @@ namespace lab_06
 
     internal class AnimalManager : Animal
     {
-        public static List<AnimalManager> animals = new List<AnimalManager>();
+        public static List<Animal> animals = new List<Animal>();
+        private object animal;
+
+        //public AnimalManager(object animal)
+        //{
+        //    this.animal = animal;
+        //}
 
         public static void addAnimal(object animal )
         {
-            animals.Add(AnimalManager animal = new AnimalManager());
+            animals.Add((Animal)animal);
             foreach (AnimalManager obj in animals)
             {
                 Console.WriteLine($"Add {obj}");

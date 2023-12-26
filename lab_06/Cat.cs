@@ -12,6 +12,7 @@ namespace lab_06
         public string color;
         public void makeSound()
         {
+            Name = "Cat"; 
             WindowsMediaPlayer myplayer = new WindowsMediaPlayer();
             myplayer.URL = "D:\\UN\\ООП\\OOP\\lab_06\\cat.mp3";
             myplayer.controls.play();
